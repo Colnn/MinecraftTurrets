@@ -2,7 +2,9 @@ package me.SkyeeYas.MinecraftTurrets;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.SkyeeYas.MinecraftTurrets.Commands.MinecraftTurrets;
 import me.SkyeeYas.MinecraftTurrets.Utils.EventLoader;
+import me.SkyeeYas.MinecraftTurrets.Utils.YmlFile;
 
 public class Main extends JavaPlugin {
 	@Override 
@@ -15,7 +17,9 @@ public class Main extends JavaPlugin {
 //            	SendConsoleMessage.sendMessage("Download here: https://github.com/Colnn/PaintingSelector/releases/latest/");
 //            }
 //        });
+		YmlFile.checkFiles();
 		EventLoader.LoadEvents();
+		this.getCommand("minecraftturrets").setExecutor(new MinecraftTurrets());
 	}
 	
 	@Override 

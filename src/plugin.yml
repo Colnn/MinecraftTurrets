@@ -1,0 +1,10 @@
+name: MinecraftTurrets
+author: SkyeeYas
+main: me.SkyeeYas.MinecraftTurrets.Main
+version: 0.1
+api-version: 1.13
+commands:
+  minecraftturrets:
+    description: Your description
+    usage: /minecraftturrets
+  
